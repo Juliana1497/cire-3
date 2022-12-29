@@ -12,7 +12,7 @@ const Whatsapp = () => {
     let productsWsp = cart.map(product => `- ${product.name}, Cantidad: ${product.amount}, Total servicio: $${product.price * product.amount}`);//A variable is created where the data that is in the cart matrix is mapped through the product property.
     const productsFormat = productsWsp.join('\n'); // A constant is created to give a spacing to each product inside the cart
     //The link is shown to redirect to the WhatsApp chat of the foundation's number and what the automatic message will say next to the products and the total to be paid
-    window.location.href ='https://api.whatsapp.com/send?phone=573209066392&text=Me%20interesan%20los%20siguientes%20servicios' +productsFormat+'Total a pagar: '+total
+    window.location.href ='https://api.whatsapp.com/send?phone=573215398569&text=Me%20interesan%20los%20siguientes%20servicios' +productsFormat+'Total a pagar: '+total
   }
   return (
     //the onClick event is used to save the whatsapp redirect function
