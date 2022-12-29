@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+Approaches to the Folder structure and the code architecture for its functionality:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The following is the general structure of the Folders contained in the main CIRE folder from which the folders and files that are installed by default when initializing React are displayed:
 
-## Available Scripts
+![1](https://user-images.githubusercontent.com/112361979/209754888-3b2c8652-a3ca-429b-bf84-82c78f21356d.png)
 
-In the project directory, you can run:
+The 'node_modules' folder will keep all the files it has by default.
 
-### `npm start`
+The public folder will only keep the files 'index.html' and 'manifest.json' since they are necessary for the operation of the web page, their content will not be edited, only the name of the web page will be changed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![2](https://user-images.githubusercontent.com/112361979/209755085-c4dd6f41-9799-4dba-b4d8-7c099511027f.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The src folder is distributed as follows:
 
-### `npm test`
+It contains another folder called 'components' where the components are contained within the 'buttons', 'layouts' and 'peyes' folders as .jsx files necessary for the operation of the web page, with their respective .css files to apply the corresponding styles. The list of components will be described later.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It contains another folder called 'data' where the DataProvider.jsx will be stored for the operation of the data, this will be the parent of all the other components
 
-### `npm run build`
+It contains another folder called 'img' where the images that will be used for the development of the web page will be contained, such as the logo, the image selected for each service and the 6 images of the home page, among others.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It contains another folder 'routes' where the page routes will be stored.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The data.js file will be inside the src folder since a require is used to import the images, so it needs to be at the same level as the folder where the images are.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In addition, it contains the files that already come by default when initializing React.
 
-### `npm run eject`
+The first one is App.js where the .jsx parent components will be called, which I will describe later.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The second is App.css where the general styles of the web page will be applied.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The third is index.js where the App element is called to render it and link it to index.html located in the public folder, which will finally be what will be displayed on the page, in this case nothing will be modified.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The fourth is index.css where the styles of the index.html are shown, the general styles of the project will be placed there.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The files App.test.js, reportWebVitals.js, setupTest.js are files which contribute to the operation of the web page, therefore they will not be modified and left.
 
-## Learn More
+![3](https://user-images.githubusercontent.com/112361979/209755433-f4de92c7-4b03-49e7-9e1a-cf851ba21c7c.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+It is divided into three folders:
 
-### Code Splitting
+buttons:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ButtonHome.jsx will take care of saving the navigation menu button for the home screen. It will be a child of the layout Navbar.jsx
 
-### Analyzing the Bundle Size
+ButtonServices.jsx will take care of saving the navigation menu button for the services screen. It will be a child of the layout Navbar.jsx
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ButtonCart.jsx will take care of saving the navigation menu button for the Cart screen. It will be a child of the layout Navbar.jsx
 
-### Making a Progressive Web App
+Layout:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+CardCategories.jsx: In this the information of each card of each service will be programmed. This will be a child of the ServicesAll.jsx, ServicesSchool.jsx and ServicesTherapies.jsx components.
 
-### Advanced Configuration
+-Footer.jsx and Footer.css: This will contain the information of the footer together with the CIRÉ social networks. This component will be a child of Layout.js. Footer.css contains the styles from Footer.jsx.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-Header.jsx and Header.css: This will contain the information of the navigation page in the desktop view together with the logo and the name of CIRÉ. This component will be a child of Layout.js. Header.css contains the styles from Header.jsx.
 
-### Deployment
+-Layout.js: This component will contain the components that are displayed in all views of the web page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-Navbar.jsx and Navbar.css: This component will contain the navigation bar in mobile and tablet view. This component will be a child of Layout.js. Navbar.css contains the styles from Navbar.jsx, ButtonHome.jsx, ButtonServices.jsx, ButtonCart.jsx.
 
-### `npm run build` fails to minify
+-NavServices.jsx : This component will contain the navigation bar in desktop view. This component will be a child of Header.jsx
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-Whatsapp.jsx: This will program the order that will be displayed in WhatsApp when the pay option is clicked. Will be a child of Summary.jsx
+
+Peyes:
+-Main view. Home.css contains the styles from Home.jsx.: Home.jsx and Home.css
+-View where all services are shown. ServicesAll.css contains the styles from CardCategories.jsx, ServicesAll.jsx, ServicesSchool.jsx, ServicesTherapies.jsx and NavServices.css: ServicesAll.jsx and ServicesAll.css
+-View where school services are displayed: ServicesSchool.jsx
+-View where the therapy services are shown: ServicesTherapies.jsx
+-View where the shopping cart is displayed. Cart.css contains the styles from Cart.jsx.: Cart.jsx and Cart.css
+-View where the summary of the purchase is shown. Summary.css contains the styles from Summary.jsx and Whatsapp.jsx: Summary.jsx and Summary.css
+
+![4](https://user-images.githubusercontent.com/112361979/209755567-4698b794-7c28-41ee-912c-e2e936546a42.png)
+
+In addition, the .gitignore files that configure the publication will be left in the repository, and the package.json that contain the necessary instructions for React to run correctly, since they are necessary for its operation, in addition to README.md since it is there. It will document all the code.
+
+![5](https://user-images.githubusercontent.com/112361979/209758201-c518ab16-f6ef-4400-ae67-46c1a0b124c1.png)
+
+Necessary dependencies to install:
+
+icons: npm i react-icons     
+routes: npm install react-router-dom
+description alert: npm install sweetalert2
