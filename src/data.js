@@ -11,7 +11,7 @@ const data = {
       price: 80000,
       conditions: "*Pago mensual",
       category: "Escolar",
-      description: "Se trabaja con cada alumno la escritura y la lectura, reforzando",
+      description: "Se trabaja con cada persona que requiere el servicio la escritura y la lectura, para mejorar su aprendizaje",
       amount: 1,
     },
 
@@ -22,7 +22,7 @@ const data = {
       price: 10000,
       conditions: "*Precio por sesión",
       category: "Terapias",
-      description: "Psicología grupal e individual. A través del arte se trabajan las emociones en la persona que requiere el servicio",
+      description: "Psicología grupal e individual. A través del arte, se trabajan las emociones en la persona que requiere el servicio",
       amount: 1,
     },
 
@@ -44,7 +44,7 @@ const data = {
       price: 10000,
       conditions: "*Precio por sesión",
       category: "Terapias",
-      description: "Terapia Ocupacional grupal e individual. Junto a la persona que requiere el servicio, se trabaja la concentración y la atención a través del arte plastico y manual.",
+      description: "Terapia Ocupacional grupal e individual. Junto a la persona que requiere el servicio, se trabaja la concentración y la atención, a través del arte plastico y manual.",
       amount: 1,
     },
 
@@ -55,7 +55,7 @@ const data = {
       price: 10000,
       conditions: "*Precio por sesión",
       category: "Terapias",
-      description: "Terapia psicosocial grupal e individual. A través del arte se manejan",
+      description: "Terapia psicosocial grupal e individual. A través del arte se refuerza las habilidades de la persona que requiere el servicio con su entorno",
       amount: 1,
     },
 
@@ -66,7 +66,7 @@ const data = {
       price: 10000,
       conditions: "*Precio por sesión",
       category: "Escolar",
-      description: "Se trabaja con cada alumno los problemas ",
+      description: "Se brinda un acompañamiento, apoyo y orientación académica en los aspectos a reforzar de la persona que requiere el servicio",
       amount: 1,
     },
 
@@ -77,7 +77,7 @@ const data = {
       price: 80000,
       conditions: "*Pago mensual",
       category: "Escolar",
-      description: "aeiou",
+      description: "Se brinda apoyo académico a la persona que requiere el servicio que haya abandonado el estudio facilitando su regreso al sistema",
       amount: 1,
     },
 
@@ -88,7 +88,7 @@ const data = {
       price: 80000,
       conditions: "*Pago mensual",
       category: "Escolar",
-      description: "aeiou",
+      description: "Se apoya a la persona con extraedad que requiere el servicio para que amplie su potencial de aprendizaje y su permanencia en el estudio",
       amount: 1,
     },
 
