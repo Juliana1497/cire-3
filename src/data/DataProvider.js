@@ -31,7 +31,7 @@ export const DataProvider = (props) =>{//The constant is created where the prope
         }
     }
     
-    const [cart, setCart] = useState(()=>{//local data handler that will send the card globally
+    const [cart, setCart] = useState([],()=>{//local data handler that will send the card globally
         const datCart = localStorage.getItem('dataCart');//when the project is initialized, it checks what is inside the local storage of the cart
         const dataCart = JSON.parse(datCart);//The JSON saves what is inside the local storage
         return dataCart;
