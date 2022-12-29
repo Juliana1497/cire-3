@@ -47,7 +47,7 @@ const Cart = () => {
         {/* A conditional is created where if the number of products in the cart is equal to 0 it will appear
          on the screen the text that no services have been added yet, if it is different from 0 the cart will
           be mapped */}
-        {cart?.length === 0 ? (
+        {cart.length === 0 ? (
           <p
             style={{
               textAlign: "center",

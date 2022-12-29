@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Logo from "../../img/Logo.png";
 import { FaShoppingCart } from "react-icons/fa";
 import "./Header.css";
-// import { DataContext } from "../../data/DataProvider"; //The DataContex is called to make use of the product data
+import { DataContext } from "../../data/DataProvider"; //The DataContex is called to make use of the product data
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  // const value = useContext(DataContext); //The constant is used to be able to consume the data within the context
-  // const [cart] = value.cart; //value.cart is the constant to bring up the cart functionality
+  const value = useContext(DataContext); //The constant is used to be able to consume the data within the context
+  const [cart] = value.cart; //value.cart is the constant to bring up the cart functionality
   return (
     <div className="containerHeader">
       <div className="imgTitle">
@@ -34,7 +34,7 @@ const Header = () => {
           <FaShoppingCart className="iconCartHeader" />
         </Link>
         {/* the total of the products inside the cart array, the .length adds the number of products */}
-        <span>0</span>
+        <span>{cart.length}</span>
       </div>
     </div>
   );
