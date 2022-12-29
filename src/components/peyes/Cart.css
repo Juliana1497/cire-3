@@ -1,0 +1,94 @@
+/* Cart styles */
+.containerCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6em;
+}
+.cardCart{
+    background-color: #D9D9D9;
+    width: 300px;
+    border-radius: 20px;
+    margin: 10px 10px;
+    display: flex;
+}
+.containerImag{
+    width: 154px;
+    height: 138px;
+    overflow: hidden;
+    margin: 7px;
+}
+.imageCart{
+    height: 138px;
+}
+.containerInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.trash:active{
+    color: red;
+}
+.subAdd, .trash{
+    display: flex;
+    justify-content: flex-end;
+}
+.subAdd button{
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 50%;
+}
+.subAdd button:active{
+    background-color: gray;
+}
+.containerContinue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonContinue{
+    background-color: #1BFFBC;
+    border-radius: 15px;
+    border: #1BFFBC;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 8px 8px 8px 1px rgba(54, 54, 54, 0.5);
+}
+
+@media screen and (min-width:768px)and (max-width:1023px){
+    .containerInfo{
+        font-size: 20px;
+    }
+    .buttonContinue{
+        font-size: 25px;
+        width: 300px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .containerCart{
+        flex-direction: column;
+    }
+    .cardCart{
+        width: 1010px;
+    }
+    .containerInfo{
+        font-size: 25px;
+        width: 900px;
+    }
+    .subAdd button{
+        font-size: 20px;
+    }
+    .buttonContinue{
+        font-size: 30px;
+        width: 400px;
+        height: 50px;
+    }
+}

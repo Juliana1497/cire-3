@@ -1,0 +1,50 @@
+/* Navbar styles and ButtonHome, ButtonServices, ButtonCart styles */
+.containerNav{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    position: fixed; 
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.buttonH, .buttonS, .buttonC{
+    font-size: 25px;
+    color: #8BE310;
+}
+.totalCart2 span{
+    background-color: #1BFFBC;
+    position: absolute;
+    right: 2.8rem; 
+    font-size: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    color: black;
+}
+.buttonH:active,.buttonS:active,.buttonC:active{
+    color: #335503;
+}
+@media screen and (min-width:768px)and (max-width:1023px){
+    .containerNav{
+        height: 75px;
+        font-size: 20px; 
+    }
+    .buttonH, .buttonS, .buttonC{
+        font-size: 40px;
+    }
+    .totalCart2 span{
+        right: 6rem;
+    }
+}
+@media screen and (min-width:1024px){
+    .containerNav{
+        display: none;
+    }
+}

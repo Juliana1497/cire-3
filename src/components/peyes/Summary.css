@@ -1,0 +1,130 @@
+/* Summary styles and Whatsapp styles */
+.containerTitleSR{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 6.5em;
+}
+.servReq{
+    background-color: #8BE310;
+    font-size: 20px;
+    color: #FAF611;
+    -webkit-text-stroke: 1px black;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.containerSum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.summaryCart{
+    background-color: transparent;
+    width: 300px;
+    margin: 10px 0px;
+    display: flex;
+}
+.summaryCart::after{
+    content: '';
+    width: 300px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    margin-top: 160px;
+}
+.containerTotal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.total{
+    margin: 15px;
+}
+.total::before{
+    content: '';
+    width: 310px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -5px;
+}
+.buttonPay{
+    background-color: #1BFFBC;
+    border-radius: 15px;
+    border: #1BFFBC;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 8px 8px 8px 1px rgba(54, 54, 54, 0.5);
+}
+.redWhat{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin-top: 5px;
+}
+
+@media screen and (min-width:768px)and (max-width:1023px){
+    .servReq{
+        font-size: 30px;
+        width: 300px;
+        height: 50px;
+    }
+    .containerSum{
+        align-items: flex-start;
+    }
+    .summaryCart{
+        width: 740px;
+        margin-left: 15px;
+    }
+    .summaryCart::after{
+        width: 740px;
+    }
+    .containerTotal{
+        font-size: 25px;
+    }
+    .total::before{
+        width: 750px;
+        margin-left: -285px;
+    }
+    .buttonPay{
+        width: 300px;
+        height: 50px;
+    }
+}
+@media screen and (min-width:1024px){
+    .servReq{
+        font-size: 40px;
+        width: 400px;
+        height: 60px;
+    }
+    .summaryCart{
+        width: 1010px;
+        margin-left: 15px;
+    }
+    .summaryCart::after{
+        width: 1010px;
+    }
+    .containerTotal{
+        font-size: 30px;
+    }
+    .total::before{
+        width: 1020px;
+        margin-left: -400px;
+    }
+    .buttonPay{
+        width: 400px;
+        height: 60px;
+    }
+}

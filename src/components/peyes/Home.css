@@ -1,0 +1,118 @@
+/* Home styles */
+.imgFundation{
+    width: 100%;
+    object-fit: cover;
+}
+.containerTitle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5em;
+}
+.titleHome{
+    background-color: #8BE310;
+    color: #FAF611;
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+}
+.description{
+    background-image: url(../../img/Fondo.png);
+    background-position: center center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 320px;  
+    max-width: 100%;
+    font-size: 15px;
+    margin: 10px;
+}
+.containerPhoto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.photoHome{
+    width: 129px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px 7px;
+}
+.imgHome{
+    height: 160px;
+}
+.buttonServices{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.buttonServ{
+    background-color: #1BFFBC;
+    border-radius: 15px;
+    border: #1BFFBC;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 8px 8px 8px 1px rgba(54, 54, 54, 0.5);
+}
+
+@media screen and (min-width:768px)and (max-width:1023px){
+    .titleHome{
+        font-size: 30px;
+        width: 300px;
+    }
+    .description{
+        font-size: 25px;
+        padding: 20px;
+    }
+    .photoHome{
+        width: 251px;
+        height: 328px;
+    }
+    .imgHome{
+        height: 328px;
+    }
+    .buttonServ{
+        width: 285px;
+        height: 60px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .titleHome{
+        font-size: 40px;
+        width: 400px;
+    }
+    .description{
+        font-size: 30px;
+        padding: 30px;
+        height: 400px;
+    }
+    .photoHome{
+        width: 374px;
+        height: 526px;
+        margin: 20px;
+    }
+    .imgHome{
+        height: 526px;
+    }
+    .buttonServ{
+        font-size: 30px;
+        width: 320px;
+        height: 70px;
+    }
+}

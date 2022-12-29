@@ -1,0 +1,132 @@
+/* CardCategories styles, ServicesAll styles, ServicesSchool styles, ServicesTherapies styles and 
+NavServices styles */
+.containerCategories{
+    display: flex;
+    justify-content: center;
+    margin-top: 6.5em;
+    margin-bottom: 20px;
+}
+.categoriesName{
+    background-color: #8BE310;
+    font-size: 20px;
+    color: #FAF611;
+    -webkit-text-stroke: 1px black;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.containerNavs{
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px; 
+}
+.navLink{
+    background-color: #9eeed6;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px 1px rgba(54, 54, 54, 0.5);
+    margin-bottom: 30px;
+}
+.navLink:active{
+    background-color: #1BFFBC;
+}
+.containerCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.containerServices{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.containerService{
+    background-color: #D9D9D9;
+    width: 300px;
+    border-radius: 20px;
+    margin: 10px 10px;
+}
+.containerImgServ{
+    width: 284px;
+    height: 117px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.containerImgServ img{
+    height:117px;
+    margin: 7px 0px;
+}
+img{
+    overflow: hidden;
+}
+.descriptionServices{
+    display: flex;
+    justify-content: space-around;
+}
+.condition{
+    color: #454545;
+}
+.containerIcon{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.iconService{
+    font-size: 30px;
+}
+.iconService:active{
+    color: #454545;
+}
+
+@media screen and (min-width:768px)and (max-width:1023px){
+    .categoriesName{
+        font-size: 30px;
+        width: 200px;
+        height: 50px;
+    }
+    .containerNavs{
+        height: 75px;
+        font-size: 20px;
+    }
+    .navLink{
+        width: 100px;
+        height: 40px;
+    }
+    .descriptionServices{
+        font-size: 20px;
+    }
+    .iconService{
+        font-size: 40px;
+    }
+}
+@media screen and (min-width:1024px){
+    .categoriesName{
+        font-size: 40px;
+        width: 300px;
+        height: 60px;
+    }
+    .containerNavs{
+        font-size: 25px;
+    }
+    .navLink{
+        width: 200px;
+        margin-bottom: 30px;
+        height: 50px;
+    }
+    .descriptionServices{
+        font-size: 25px;
+    }
+    .iconService{
+        font-size: 50px;
+    }
+}

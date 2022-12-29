@@ -1,0 +1,88 @@
+/*Header styles*/
+.containerHeader{
+    background-color: #8BE310;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.imgTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imgHeader{
+    width: 62px;
+    padding: 7px 0px;
+}
+.titleHeader{
+    font-size: 25px;
+    color: #FAF611;
+    -webkit-text-stroke: 1px black;
+}
+.iconCartHeader{
+    font-size: 41px;
+    color: white;
+}
+.iconCartHeader:active{
+    color: blue;
+}
+.totalCart span{
+    background-color: #1BFFBC;;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    width: 20px;
+    border-radius: 50%;
+}
+@media screen and (max-width:1023px) {
+    .navHeader{
+        display: none;
+    }
+}
+@media screen and (min-width:768px)and (max-width:1023px){
+    .titleHeader{
+        font-size: 30px;
+    }
+    .totalCart span{
+        right: 7rem;
+    }
+}
+@media screen and (min-width:1024px){
+    .imgHeader{
+        width: 80px;
+    }
+    .titleHeader{
+        font-size: 40px;
+    }
+    .totalCart{
+        display: flex;
+    }
+    .navHeader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navHeader div p{
+        margin: 10px;
+        font-size: 30px;
+        color: #FAF611;
+        -webkit-text-stroke: 1px black;
+    }
+    .navHeader div p:hover{
+        color: white;
+    }
+    .iconCartHeader{
+        font-size: 55px;
+    }
+    .totalCart span{
+        right: 8rem;
+        width: 30px;
+        height: 30px;
+        font-size: 23px;
+    }
+}
