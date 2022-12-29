@@ -31,11 +31,11 @@ export const DataProvider = (props) =>{//The constant is created where the prope
         }
     }
     
-    const [cart, setCart] = useState([],()=>{//local data handler that will send the card globally
+    const [cart, setCart] = useState(()=>{//local data handler that will send the card globally
         const datCart = localStorage.getItem('dataCart');//when the project is initialized, it checks what is inside the local storage of the cart
         const dataCart = JSON.parse(datCart);//The JSON saves what is inside the local storage
         return dataCart;
-    });
+    }, []);
 
     useEffect(()=>{//Every time there is a change inside cart the save action is executed in the localStorage in dataCart
         localStorage.setItem('dataCart', JSON.stringify(cart));
@@ -43,7 +43,7 @@ export const DataProvider = (props) =>{//The constant is created where the prope
 
 
     useEffect(() =>{
-        const getTotal = () =>{//Las funciones se llaman a si mismas
+        const getTotal = () =>{//functions call themselves
             const res = cart.reduce((prev, services) =>{//The sum of the prices of the service will be accumulated in the constanto
                 return prev + (services.price * services.amount);//each value of the price and quantity array cart multiplies them and adds them to the accumulator
             }, 0)
