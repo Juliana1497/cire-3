@@ -42,16 +42,16 @@ export const DataProvider = (props) =>{//The constant is created where the prope
     }, [cart]);
 
 
-    // useEffect(() =>{
-    //     const getTotal = () =>{//Las funciones se llaman a si mismas
-    //         const res = cart.reduce((prev, services) =>{//The sum of the prices of the service will be accumulated in the constanto
-    //             return prev + (services.price * services.amount);//each value of the price and quantity array cart multiplies them and adds them to the accumulator
-    //         }, 0)
+    useEffect(() =>{
+        const getTotal = () =>{//Las funciones se llaman a si mismas
+            const res = cart.reduce((prev, services) =>{//The sum of the prices of the service will be accumulated in the constanto
+                return prev + (services.price * services.amount);//each value of the price and quantity array cart multiplies them and adds them to the accumulator
+            }, 0)
 
-    //         setTotal(res)
-    //     }
-    //     getTotal()
-    // },[cart])
+            setTotal(res)
+        }
+        getTotal()
+    },[cart])
 
     const value = {//The constant where the props will be stored is created, so that this information can be accessed in any child component
         products: [products],
