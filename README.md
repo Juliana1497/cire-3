@@ -83,3 +83,6 @@ Necessary dependencies to install:
 icons: npm i react-icons     
 routes: npm install react-router-dom
 description alert: npm install sweetalert2
+
+FUNCTIONALITY:
+The explanation of the functionality of the web page is commented within each code file.
