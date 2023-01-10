@@ -30,6 +30,7 @@ const ServicesTherapies = () => {
               conditions={i.conditions}
               category={i.category}
               category2={i.category2}
+              description={i.description}
               aomunt={i.amount}
             />
           ))}
